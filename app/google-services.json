@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "411978375280",
+    "firebase_url": "https://not-forgot-6bfd4.firebaseio.com",
+    "project_id": "not-forgot-6bfd4",
+    "storage_bucket": "not-forgot-6bfd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411978375280:android:c8bff88bb0cac3cad0d4b5",
+        "android_client_info": {
+          "package_name": "com.example.notforgot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411978375280-88g7n3pju9naqdotsif7j3g1b703frkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4D3mTHzPykR7uBChBJVx-qGmgPc3BWDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411978375280-88g7n3pju9naqdotsif7j3g1b703frkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NotForgot</string>
+    <string name="password">password</string>
+    <string name="action_bar_text">Not Forgot!</string>
+    <string name="yourmail">yourmail</string>
+    <string name="login">Вход</string>
+    <string name="register">Регистрация</string>
+    <string name="incorrect_email">Вы ввели некорректный @email</string>
+    <string name="mismatched_passwords">Введеные пароли не совпадают</string>
+    <string name="empty_fields">Заполните пустые поля</string>
+    <string name="successful_login">Вы успешно вошли</string>
+    <string name="wrong_entry">Неправильный email или пароль</string>
+    <string name="successful_registration">Вы успешно зарегистрировались</string>
+    <string name="save">СОХРАНИТЬ</string>
+</resources>
