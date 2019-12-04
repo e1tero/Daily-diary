@@ -31,9 +31,17 @@ class MainActivity : AppCompatActivity() {
         loadData()
 
         val actionBar = supportActionBar
-        actionBar?.setTitle((Html.fromHtml("<font color=\"#ffffff\">" + getString(R.string.action_bar_text) + "</font>")))
+        actionBar?.setTitle((Html.fromHtml("<font color=\"#ffffff\">" + "MyPets" + "</font>")))
 
+        food_bag.setOnClickListener{
+            val intent = Intent(this, FoodActivity::class.java)
+            startActivity(intent)
+        }
 
+        note_button.setOnClickListener{
+            val intent = Intent(this, NoteActivity::class.java)
+            startActivity(intent)
+        }
 
         add_menu.setOnClickListener{
             val i = Intent(this, actAddUpdateNotes::class.java)

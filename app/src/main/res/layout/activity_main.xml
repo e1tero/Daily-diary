@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/listNotes"
         android:layout_alignBottom="@+id/listNotes"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="18dp"
         android:background="#f68545"
         android:layout_marginBottom="15dp"
         android:clickable="true"
@@ -48,6 +48,42 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="240dp"
         app:srcCompat="@drawable/placeholder" />
+
+    <ImageButton
+        android:id="@+id/note_button"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_alignEnd="@+id/listNotes"
+        android:layout_alignBottom="@+id/listNotes"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="13dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/note" />
+
+    <ImageButton
+    android:id="@+id/food_bag"
+    android:layout_width="62dp"
+    android:layout_height="59dp"
+    android:layout_alignEnd="@+id/listNotes"
+    android:layout_alignBottom="@+id/listNotes"
+    android:layout_marginEnd="188dp"
+    android:layout_marginBottom="13dp"
+    android:background="#00FFFFFF"
+    android:scaleType="centerInside"
+    app:srcCompat="@drawable/food_bag" />
+
+    <ImageButton
+        android:id="@+id/medicine"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_alignEnd="@+id/listNotes"
+        android:layout_alignBottom="@+id/listNotes"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="13dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/medical_icon" />
 
 
 </RelativeLayout>

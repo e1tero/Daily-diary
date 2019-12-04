@@ -28,6 +28,8 @@ class actAddUpdateNotes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_add_update_notes)
 
+        val actionBar = supportActionBar
+        actionBar?.setTitle((Html.fromHtml("<font color=\"#ffffff\">" + "MyPets" + "</font>")))
 
         state = intent.getStringExtra("state")
 
@@ -39,6 +41,7 @@ class actAddUpdateNotes : AppCompatActivity() {
                 val arr: ArrayList<String> = ArrayList(db.selectForUpdate(state.toInt()))
                 etTitle.setText(arr[0])
                 etDesc.setText(arr[1])
+
             } catch (e: Exception){
                 Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
             }
@@ -57,6 +60,7 @@ class actAddUpdateNotes : AppCompatActivity() {
                 try {
                     val sdf = SimpleDateFormat("yyyy/MM/dd-hh:mm:ss")
                     val dtNow = sdf.format(Date())
+                    db.insert(etTitle.text.toString(), etDesc.text.toString(), dtNow)
                     db.insert(etTitle.text.toString(), etDesc.text.toString(), dtNow)
                     Toast.makeText(this, "Insert new notes", Toast.LENGTH_SHORT).show()
                     finish()

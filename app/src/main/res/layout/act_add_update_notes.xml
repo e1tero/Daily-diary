@@ -7,54 +7,58 @@
     tools:context=".actAddUpdateNotes"
     android:background="@color/colorAccent">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TopText"
             android:layout_width="match_parent"
-            android:background="#fff"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="vertical">
+            android:layout_marginBottom="2dp"
+            android:background="#00000000"
+            android:singleLine="true"
+            android:text="Заполните данные"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/TopText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:background="#00000000"
-                android:text="Добавить заметку"
-                android:singleLine="true"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00000000"
+            android:fontFamily="serif"
+            android:hint="Имя питомца"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:textStyle="normal" />
 
-            <EditText
-                android:id="@+id/etTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:background="#00000000"
-                android:fontFamily="serif"
-                android:hint="Название"
-                android:singleLine="true"
-                android:textSize="18sp"
-                android:textStyle="normal" />
+        <EditText
+            android:id="@+id/etDesc"
+            android:layout_width="390dp"
+            android:layout_height="558dp"
+            android:layout_marginTop="20dp"
+            android:background="#00000000"
+            android:fontFamily="serif"
+            android:gravity="top"
+            android:hint="Описание"
+            android:minHeight="569dp" />
 
-            <EditText
-                android:id="@+id/etDesc"
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="#00000000"
-                android:fontFamily="serif"
-                android:gravity="top"
-                android:hint="Описание"
-                android:minHeight="569dp"/>
+        <Button
+            android:id="@+id/save_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
 
-            <Button
-                android:id="@+id/save_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/save" />
-
-        </LinearLayout>
+    </LinearLayout>
 
 </ScrollView>
